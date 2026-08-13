@@ -7,11 +7,11 @@
             font-family: "Courier New", Courier, monospace;
             text-align: center;
             padding: 50px;
-            background-color: #000000;
+            background-color: #1a1a1a;
             color: white;
         }
         .profile-card {
-            border: 2px solid #16f128;
+            border: 2px solid #ff4444;
             padding: 20px;
             border-radius: 15px;
             display: inline-block;
@@ -21,11 +21,17 @@
 <body>
     <div class="profile-card">
         <h1 id="status">Access Granted</h1>
-        <p class="hackedStatus">Hacked by... Link</p>
+        <p class="hackedStatus">Hacked by... Nobody</p>
      </div>
 
     <script>
         //MISSION: Write your override code below
+        document.getElementById("status").textContent = "Access Granted";
+        document.querySelector(".hackedStatus").textContent = "Hacked by... Link";
+        document.querySelector(".profile-card").style.borderColor = "green";
+
+
+
     </script>
   </body>
 </html>
